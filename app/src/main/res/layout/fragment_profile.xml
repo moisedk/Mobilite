@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ProfileFragment">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="@+id/guidelineProfile"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        tools:src="@tools:sample/avatars" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineProfile"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:text="Ali Michael" />
+
+    <Button
+        android:id="@+id/btnFreeJourneys"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:backgroundTint="@color/white"
+        android:importantForAccessibility="no"
+        android:minHeight="@dimen/minHeight"
+        android:text="@string/free_journeys"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_fav_free_journey_24"
+        app:layout_constraintStart_toStartOf="@+id/guidelineProfile"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+    <Button
+        android:id="@+id/btnPayments"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:backgroundTint="@color/white"
+        android:text="@string/payments"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_payment_24"
+        app:layout_constraintStart_toStartOf="@+id/btnFreeJourneys"
+        app:layout_constraintTop_toBottomOf="@+id/btnFreeJourneys" />
+
+    <Button
+        android:id="@+id/btnHistory"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:backgroundTint="@color/white"
+        android:text="@string/history"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_history_24"
+        app:layout_constraintStart_toStartOf="@+id/btnPayments"
+        app:layout_constraintTop_toBottomOf="@+id/btnPayments" />
+
+    <Button
+        android:id="@+id/btnPromotions"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:backgroundTint="@color/white"
+        android:text="@string/promotions"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_promotion_24"
+        app:layout_constraintStart_toStartOf="@+id/btnHistory"
+        app:layout_constraintTop_toBottomOf="@+id/btnHistory" />
+
+    <Button
+        android:id="@+id/btnSupport"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:backgroundTint="@color/white"
+        android:text="@string/support"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_chat_support_24"
+        app:layout_constraintStart_toStartOf="@+id/btnPromotions"
+        app:layout_constraintTop_toBottomOf="@+id/btnPromotions" />
+
+    <Button
+        android:id="@+id/btnAbout"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:backgroundTint="@color/white"
+        android:text="@string/about"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_about_info_24"
+        app:layout_constraintStart_toStartOf="@+id/btnSupport"
+        app:layout_constraintTop_toBottomOf="@+id/btnSupport" />
+
+    <Button
+        android:id="@+id/btnWorkRides"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:backgroundTint="@color/white"
+        android:text="@string/work_rides"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_work_ride_24"
+        app:layout_constraintStart_toStartOf="@+id/btnAbout"
+        app:layout_constraintTop_toBottomOf="@+id/btnAbout" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
