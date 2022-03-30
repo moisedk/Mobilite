@@ -29,7 +29,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/btnRedeem"
         app:layout_constraintVertical_bias="0.08" />
 
     <androidx.cardview.widget.CardView
@@ -70,11 +70,12 @@
                     android:src="@drawable/ic_e_wallet" />
 
                 <TextView
+                    android:id="@+id/tvTotalPoints"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:text="100 points"
+                    android:text="@string/total_points"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
@@ -83,8 +84,8 @@
 
     </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/button"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRedeem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Redeem points"
@@ -97,12 +98,11 @@
         app:layout_constraintVertical_bias="0.032" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnRefer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
         android:background="@drawable/btn_rounded"
-        android:fontFamily="serif"
         android:text="Refer a friend and earn 5 points"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -166,7 +166,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Port Loius" />
+                    android:text="Port Louis" />
             </LinearLayout>
 
             <TextView

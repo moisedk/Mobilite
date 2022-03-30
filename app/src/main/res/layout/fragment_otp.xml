@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.OtpFragment">
 
 
@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="64dp"
-        android:text="Please Enter \nOTP Verification"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:text="Please Enter OTP Verification"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -72,9 +72,10 @@
             android:layout_marginEnd="20sp"
             android:layout_weight="1"
             android:background="@drawable/et_otp"
-            android:textAlignment="center"
             android:focusedByDefault="true"
-            android:inputType="numberPassword" />
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:textAlignment="center" />
 
         <EditText
             android:id="@+id/etCode2"
@@ -84,8 +85,9 @@
             android:layout_weight="1"
             android:background="@drawable/et_otp"
             android:enabled="false"
-            android:textAlignment="center"
-            android:inputType="numberPassword" />
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:textAlignment="center" />
 
         <EditText
             android:id="@+id/etCode3"
@@ -95,8 +97,9 @@
             android:layout_weight="1"
             android:background="@drawable/et_otp"
             android:enabled="false"
-            android:textAlignment="center"
-            android:inputType="numberPassword" />
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:textAlignment="center" />
 
         <EditText
             android:id="@+id/etCode4"
@@ -106,31 +109,33 @@
             android:layout_weight="1"
             android:background="@drawable/et_otp"
             android:enabled="false"
-            android:textAlignment="center"
-            android:inputType="numberPassword" />
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:textAlignment="center" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/textView"
+        style="@style/TextAppearance.AppCompat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Didn't receive an OTP?"
-        style="@style/TextAppearance.AppCompat"
         android:layout_marginStart="24dp"
+        android:text="Didn't receive an OTP?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0.144" />
 
-    <TextView
-        android:id="@+id/textView2"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnResendOPT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:icon="@drawable/ic_replay"
         android:text="Resend"
-        android:drawableStart="@drawable/ic_replay"
-        style="@style/TextAppearance.AppCompat"
+        app:iconTint="@color/purple_500"
+        android:backgroundTint="@color/white"
         android:textAlignment="center"
-        android:textColor="#1b1cff"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.884"
@@ -139,16 +144,16 @@
         app:layout_constraintVertical_bias="0.144" />
 
 
-    <Button
-        android:id="@+id/btnNext"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAccountCreation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/btn_rounded"
+        android:backgroundTint="@color/black"
+        android:fontFamily="casual"
         android:text="Verify and Create Account"
         android:textColor="@color/white"
-        android:backgroundTint="@color/black"
         android:textSize="17sp"
-        android:fontFamily="casual"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

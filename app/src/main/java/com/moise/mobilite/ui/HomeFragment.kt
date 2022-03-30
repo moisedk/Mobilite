@@ -1,4 +1,4 @@
-package com.moise.mobilite
+package com.moise.mobilite.ui
 
 import androidx.fragment.app.Fragment
 

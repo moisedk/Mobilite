@@ -2,4 +2,31 @@
     <string name="app_name">Mobilite</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="log_in">Log in</string>
+    <string name="mobilite_gmail_com">mobilite@gmail.com</string>
+    <string name="hint_ellipse">................</string>
+    <string name="free_journeys">Free journeys</string>
+    <string name="payments">Payments</string>
+    <string name="history">History</string>
+    <string name="promotions">Promotions</string>
+    <string name="support">Support</string>
+    <string name="about">About</string>
+    <string name="work_rides">Work rides</string>
+    <string name="enter_a_promo_code">Enter a promo code</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="total_points">%d points</string>
+    <string name="title_activity_home_maps">Mobilite</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
 </resources>

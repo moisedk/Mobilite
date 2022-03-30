@@ -11,18 +11,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="60sp"
+        android:background="@drawable/et_otp"
+        android:paddingTop="15dp"
         android:text="EMENALOKF8"
         android:textAlignment="center"
-        android:paddingTop="15dp"
-        android:textStyle="bold"
-        android:textSize="18sp"
         android:textColor="@color/black"
-        android:background="@drawable/et_otp"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.358"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.165" />
+        app:layout_constraintVertical_bias="0.161" />
 
     <TextView
         android:id="@+id/tvDesc"
@@ -42,7 +43,7 @@
         app:layout_constraintVertical_bias="0.056" />
 
     <Button
-        android:id="@+id/btnNext"
+        android:id="@+id/btnShareCode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/btn_h_rounded"
