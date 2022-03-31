@@ -3,13 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/btn_h_rounded.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/btn_rounded.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/et_otp.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/ic_e_wallet.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/ic_fav_free_journey_24.xml" value="0.2085" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/ic_promotion_24.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/ic_replay.xml" value="0.2085" />
+        <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.2085" />
         <entry key="app/src/main/res/layout/activity_home_maps.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3229166666666667" />
@@ -17,6 +20,7 @@
         <entry key="app/src/main/res/layout/app_bar_home.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/content_home.xml" value="0.3229166666666667" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/fragment_add_card.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/fragment_code.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.3229166666666667" />
@@ -25,6 +29,7 @@
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/fragment_otp.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/fragment_payment.xml" value="0.3229166666666667" />
+        <entry key="app/src/main/res/layout/fragment_plug_to.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/fragment_points.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/fragment_progile.xml" value="0.3166496424923391" />
@@ -35,7 +40,11 @@
         <entry key="app/src/main/res/layout/fragment_welcome_.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/history_item_list.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/nav_header_home.xml" value="0.3229166666666667" />
+        <entry key="app/src/main/res/layout/profile_header.xml" value="0.3229166666666667" />
+        <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.3229166666666667" />
+        <entry key="app/src/main/res/menu/home.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.3229166666666667" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2085" />
       </map>
     </option>
   </component>

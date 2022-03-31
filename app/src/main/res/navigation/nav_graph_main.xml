@@ -1,4 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph_main.xml" />
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main.xml"
+    app:startDestination="@id/homeMapsActivity">
+    <activity
+        android:id="@+id/homeMapsActivity"
+        android:name="com.moise.mobilite.ui.HomeMapsActivity"
+        android:label="app_bar_main"
+        tools:layout="@layout/app_bar_main" />
+    <fragment
+        android:id="@+id/nav_payments"
+        android:name="com.moise.mobilite.ui.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" />
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.moise.mobilite.ui.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/nav_promotions"
+        android:name="com.moise.mobilite.ui.PromotionFragment"
+        android:label="fragment_promotion"
+        tools:layout="@layout/fragment_promotion" />
+    <fragment
+        android:id="@+id/nav_loyalty_points"
+        android:name="com.moise.mobilite.ui.PointsFragment"
+        android:label="fragment_points"
+        tools:layout="@layout/fragment_points" />
+</navigation>

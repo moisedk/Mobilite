@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
 
-    <item android:title="Item" />
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_plug_to"
+            android:title="Plug To"
+            android:icon="@drawable/ic_baseline_electric_car_24"/>
+        <item
+            android:id="@+id/nav_payments"
+            android:icon="@drawable/ic_payment_24"
+            android:title="Payments" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_history_24"
+            android:title="History" />
+        <item
+            android:id="@+id/nav_free_journeys"
+            android:icon="@drawable/ic_fav_free_journey_24"
+            android:title="Free Journeys" />
+        <item
+            android:id="@+id/nav_loyalty_points"
+            android:icon="@drawable/ic_e_wallet"
+            android:title="Loyalty Points" />
+        <item
+            android:id="@+id/nav_promotions"
+            android:icon="@drawable/ic_promotion_24"
+            android:title="Promotions" />
+        <item
+            android:id="@+id/nav_work_rides"
+            android:icon="@drawable/ic_work_ride_24"
+            android:title="Work Rides" />
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/ic_chat_support_24"
+            android:title="Support" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about_info_24"
+            android:title="About" />
+
+
+    </group>
+
 </menu>
