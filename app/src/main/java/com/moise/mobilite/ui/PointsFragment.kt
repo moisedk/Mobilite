@@ -24,6 +24,7 @@ class PointsFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         binding.btnRedeem.setOnClickListener{
             totalPoints.minus(5)
             binding.tvTotalPoints.text = getString(R.string.total_points, totalPoints)
