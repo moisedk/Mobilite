@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.moise.mobilite.databinding.FragmentRegisterBinding
 
 class RegisterFragment : Fragment() {
@@ -24,7 +25,8 @@ class RegisterFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.btnNext.setOnClickListener{
-            context?.startActivity(Intent(context, HomeMapsActivity::class.java))
+            val action = RegisterFragmentDirections.actionRegisterFragmentToRegisterNextFragment()
+            findNavController().navigate(action)
         }
         binding.btnWithGoogle.setOnClickListener{
             Toast.makeText(context, "Logging in with Google Authentication API!!!", Toast.LENGTH_SHORT).show()

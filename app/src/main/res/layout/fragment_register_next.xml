@@ -7,7 +7,7 @@
     tools:context=".ui.RegisterNextFragment">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/edtUsername"
+        android:id="@+id/edtUsernameLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
@@ -16,10 +16,29 @@
         app:layout_constraintTop_toTopOf="@+id/guidelineH">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:hint="Enter your username" />
+            android:hint="Enter a username"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etPhoneRegisterLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtUsernameLayout"
+        app:layout_constraintStart_toStartOf="@+id/edtUsernameLayout"
+        app:layout_constraintTop_toBottomOf="@+id/edtUsernameLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPhoneNumberRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your phone number"
+            android:inputType="phone" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -30,10 +49,10 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:backgroundTint="@color/black"
-        android:text="REGISTER"
+        android:text="Next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guidelineV"
-        app:layout_constraintTop_toBottomOf="@+id/edtUsername" />
+        app:layout_constraintTop_toBottomOf="@+id/etPhoneRegisterLayout" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineV"

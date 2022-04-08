@@ -1,11 +1,19 @@
 package com.moise.mobilite.ui
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
+import android.text.SpannableString
+import android.text.Spanned
+import android.text.TextPaint
+import android.text.method.LinkMovementMethod
+import android.text.style.ClickableSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.moise.mobilite.R
 import com.moise.mobilite.databinding.FragmentLoginBinding
 
 class LoginFragment : Fragment() {
@@ -24,9 +32,23 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.btnLogin.setOnClickListener{
             context?.startActivity(Intent(context, HomeMapsActivity::class.java))
-//            val action = LoginFragmentDirections.actionLoginFragmentToMapsActivity()
-//            findNavController().navigate(action)
         }
+        val spannableString = SpannableString(getString(R.string.forgot_password_help))
+        val clickableSpan = object : ClickableSpan(){
+            override fun updateDrawState(ds: TextPaint) {
+                super.updateDrawState(ds)
+                ds.isUnderlineText = false
+
+            }
+
+            override fun onClick(widget: View) {
+                Toast.makeText(requireContext(), "Help is on the way!", Toast.LENGTH_SHORT).show()
+            }
+        }
+        spannableString.setSpan(clickableSpan, 17, 25, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+        binding.tvPasswordRecover.text = spannableString
+        binding.tvPasswordRecover.movementMethod = LinkMovementMethod.getInstance()
+        binding.tvPasswordRecover.highlightColor = Color.TRANSPARENT
     }
 
     override fun onDestroy() {

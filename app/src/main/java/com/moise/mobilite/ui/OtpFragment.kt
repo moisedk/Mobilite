@@ -27,7 +27,7 @@ class OtpFragment: Fragment() {
             Toast.makeText(context, "Code has been resent", Toast.LENGTH_SHORT).show()
         }
         binding.btnAccountCreation.setOnClickListener{
-            startActivity(Intent(context, MainActivity::class.java))
+            startActivity(Intent(context, HomeMapsActivity::class.java))
         }
     }
 }

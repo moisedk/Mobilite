@@ -10,7 +10,8 @@ import com.moise.mobilite.databinding.FragmentPromotionBinding
 
 class PromotionFragment: Fragment() {
     private var _binding: FragmentPromotionBinding? = null
-    private val binding: FragmentPromotionBinding = _binding!!
+    private val binding get() = _binding!!
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -26,5 +27,10 @@ class PromotionFragment: Fragment() {
             binding.tvCode.text = null
             Toast.makeText(context, "Promo code applied", Toast.LENGTH_SHORT).show()
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

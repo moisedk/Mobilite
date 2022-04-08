@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_small"
-        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginTop="@dimen/big_top_margin"
         android:text="Saved payment methods"
         android:textSize="24sp" />
 
@@ -33,6 +33,8 @@
 
         <com.google.android.material.radiobutton.MaterialRadioButton
             android:id="@+id/rbCash"
+            android:text="Cash"
+            android:textSize="16sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </RadioGroup>
@@ -56,7 +58,7 @@
         android:background="?android:attr/listDivider" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnEnterPromoCode"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
