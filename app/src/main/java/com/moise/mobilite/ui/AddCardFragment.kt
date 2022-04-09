@@ -35,7 +35,7 @@ class AddCardFragment : Fragment() {
     private fun clearScreen() {
         binding.tvCardFullName.text = null
         binding.edtCardNumber.text = null
-        binding.etPhoneNumber.text = null
+        binding.etCardPhone.text = null
         binding.etCardDate.text = null
         binding.etCVC.text = null
         binding.etPIN.text = null

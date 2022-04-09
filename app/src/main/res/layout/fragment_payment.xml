@@ -3,15 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/grey"
     android:layout_height="match_parent"
     tools:context=".ui.PaymentFragment">
 
     <com.google.android.material.textview.MaterialTextView
+        android:layout_marginTop="@dimen/big_top_margin"
         android:id="@+id/tvPaymentMethods"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_small"
-        android:layout_marginTop="@dimen/big_top_margin"
         android:text="Saved payment methods"
         android:textSize="24sp" />
 

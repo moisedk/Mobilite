@@ -23,8 +23,8 @@
         android:label="fragment_register"
         tools:layout="@layout/fragment_register">
         <action
-            android:id="@+id/action_registerFragment_to_registerNextFragment"
-            app:destination="@id/registerNextFragment" />
+            android:id="@+id/action_registerFragment_to_otpFragment"
+            app:destination="@id/otpFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -34,15 +34,6 @@
         <action
             android:id="@+id/action_loginFragment_to_mapsActivity"
             app:destination="@id/mapsActivity" />
-    </fragment>
-    <fragment
-        android:id="@+id/registerNextFragment"
-        android:name="com.moise.mobilite.ui.RegisterNextFragment"
-        android:label="fragment_register_next"
-        tools:layout="@layout/fragment_register_next" >
-        <action
-            android:id="@+id/action_registerNextFragment_to_otpFragment"
-            app:destination="@id/otpFragment" />
     </fragment>
     <activity
         android:id="@+id/mapsActivity"

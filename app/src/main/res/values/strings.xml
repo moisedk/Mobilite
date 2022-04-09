@@ -32,4 +32,8 @@
     <string name="ride_finished">Finished</string>
     <string name="cancelled">Cancelled</string>
     <string name="forgot_password_help">Forgot Password? Get help</string>
+    <string name="this_code_will_expire_in">This code will expire in %s min</string>
+    <string name="pick_place">Pick A Place</string>
+    <string name="default_info_title">Title</string>
+    <string name="default_info_snippet">Info</string>
 </resources>

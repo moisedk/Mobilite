@@ -25,7 +25,7 @@ class RegisterFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.btnNext.setOnClickListener{
-            val action = RegisterFragmentDirections.actionRegisterFragmentToRegisterNextFragment()
+            val action = RegisterFragmentDirections.actionRegisterFragmentToOtpFragment()
             findNavController().navigate(action)
         }
         binding.btnWithGoogle.setOnClickListener{
