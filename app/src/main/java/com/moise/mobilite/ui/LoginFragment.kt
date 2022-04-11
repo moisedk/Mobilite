@@ -32,6 +32,7 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.btnLogin.setOnClickListener{
             context?.startActivity(Intent(context, HomeMapsActivity::class.java))
+            requireActivity().finish()
         }
         val spannableString = SpannableString(getString(R.string.forgot_password_help))
         val clickableSpan = object : ClickableSpan(){

@@ -10,15 +10,17 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:background="@color/transparent"
-        app:elevation="0.1dp"
-        android:theme="@style/Theme.Mobilite.AppBarOverlay">
+        android:outlineProvider="background"
+        android:theme="@style/Theme.Mobilite.AppBarOverlay"
+        app:elevation="0.001dp"
+        >
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:minHeight="?attr/actionBarSize"
-            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     </com.google.android.material.appbar.AppBarLayout>
 

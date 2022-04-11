@@ -4,14 +4,25 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2085" />
+        <entry key="app/src/main/res/drawable/bg_circle.xml" value="0.239" />
         <entry key="app/src/main/res/drawable/btn_h_rounded.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/btn_rounded.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/et_otp.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1475" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_down_24.xml" value="0.242" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.242" />
+        <entry key="app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.239" />
         <entry key="app/src/main/res/drawable/ic_baseline_dehaze_24.xml" value="0.1475" />
+        <entry key="app/src/main/res/drawable/ic_baseline_delete_outline_24.xml" value="0.239" />
+        <entry key="app/src/main/res/drawable/ic_baseline_directions_car_24.xml" value="0.239" />
+        <entry key="app/src/main/res/drawable/ic_baseline_electric_car_24.xml" value="0.242" />
         <entry key="app/src/main/res/drawable/ic_e_wallet.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/ic_fav_free_journey_24.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2085" />
+        <entry key="app/src/main/res/drawable/ic_outline_business_center_24.xml" value="0.239" />
+        <entry key="app/src/main/res/drawable/ic_outline_edit_24.xml" value="0.239" />
+        <entry key="app/src/main/res/drawable/ic_outline_email_24.xml" value="0.239" />
+        <entry key="app/src/main/res/drawable/ic_outline_home_24.xml" value="0.239" />
         <entry key="app/src/main/res/drawable/ic_promotion_24.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/ic_replay.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.2085" />
@@ -29,6 +40,7 @@
         <entry key="app/src/main/res/layout/fragment_add_card.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/fragment_code.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.3229166666666667" />
+        <entry key="app/src/main/res/layout/fragment_help.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/fragment_history.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.30520833333333336" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.3229166666666667" />
@@ -41,6 +53,7 @@
         <entry key="app/src/main/res/layout/fragment_promotion.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/fragment_register.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/fragment_register_next.xml" value="0.3229166666666667" />
+        <entry key="app/src/main/res/layout/fragment_support.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/fragment_welcome.xml" value="0.264" />
         <entry key="app/src/main/res/layout/fragment_welcome_.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/history_item_list.xml" value="0.3229166666666667" />

@@ -28,6 +28,7 @@ class OtpFragment: Fragment() {
         }
         binding.btnAccountCreation.setOnClickListener{
             startActivity(Intent(context, HomeMapsActivity::class.java))
+            requireActivity().finish()
         }
     }
 }

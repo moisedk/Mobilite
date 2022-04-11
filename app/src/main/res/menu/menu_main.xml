@@ -15,10 +15,6 @@
             android:icon="@drawable/ic_history_24"
             android:title="History" />
         <item
-            android:id="@+id/nav_free_journeys"
-            android:icon="@drawable/ic_fav_free_journey_24"
-            android:title="Free Journeys" />
-        <item
             android:id="@+id/nav_loyalty_points"
             android:icon="@drawable/ic_e_wallet"
             android:title="Loyalty Points" />

@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.PersistableBundle
 import android.view.Gravity
 import android.view.MenuItem
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
@@ -52,10 +53,6 @@ class HomeMapsActivity : AppCompatActivity() {
                 R.id.nav_history -> {
                     fragment = HistoryFragment()
                 }
-                R.id.nav_free_journeys -> {
-                    fragment = null
-                    Toast.makeText(this, "Free Journeys!", Toast.LENGTH_SHORT).show()
-                }
                 R.id.nav_loyalty_points -> {
                     fragment = PointsFragment()
                 }
@@ -63,8 +60,7 @@ class HomeMapsActivity : AppCompatActivity() {
                     fragment = PromotionFragment()
                 }
                 R.id.nav_support -> {
-                    fragment = null
-                    Toast.makeText(this, "Support on its way!", Toast.LENGTH_SHORT).show()
+                    fragment = SupportFragment()
                 }
                 R.id.nav_about -> {
                     fragment = null
@@ -83,6 +79,23 @@ class HomeMapsActivity : AppCompatActivity() {
             title = ""
             }
             true
+        }
+        setHeaderOnClickListener(navigationView)
+    }
+
+    private fun setHeaderOnClickListener(navigationView: NavigationView) {
+        val headerViewItem = navigationView.inflateHeaderView(R.layout.profile_header)
+        val profilePicture = headerViewItem.findViewById<ImageView>(R.id.ivProfilePicture)
+        profilePicture.setOnClickListener{
+            val profileFragment = ProfileFragment()
+            supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.flContainer, profileFragment)
+                .addToBackStack("")
+                .commit()
+            drawerLayout.closeDrawers()
+            supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_baseline_arrow_back_24)
+
         }
     }
 

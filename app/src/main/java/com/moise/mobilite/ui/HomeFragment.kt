@@ -100,7 +100,6 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
         getDeviceLocation()
 
         fabCurrentLocation.setOnClickListener {
-            // TODO: Update the UI with the teh camera placed at the current location od the user, with appropriate zoom level
             Log.d(TAG, "onMapReady: called")
             fabCurrentLocation.rippleColor = Color.GREEN
             getDeviceLocation()
@@ -127,9 +126,7 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
                         )
                     )
                 }
-                Log.i(TAG, "Place: ${place.name}, ${place.latLng}")
             }
-
             override fun onError(status: Status) {
                 Log.i(TAG, "An error occurred: $status")
             }
@@ -151,14 +148,8 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
                 arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
                 PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION
             )
-//            ActivityCompat.requestPermissions(
-//                requireActivity(), arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
-//                PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION
-//            )
         }
     }
-
-
     @Deprecated("Deprecated in Java")
     override fun onRequestPermissionsResult(
         requestCode: Int,
@@ -225,12 +216,11 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
                                     ), DEFAULT_ZOOM.toFloat()
                                 )
                             )
-//                            fabCurrentLocation.contentBackground
                         }
                     } else {
                         Log.d(TAG, "Current location is null. Using defaults.")
                         Log.e(TAG, "Exception: %s", task.exception)
-                        map?.moveCamera(
+                        map?.animateCamera(
                             CameraUpdateFactory
                                 .newLatLngZoom(defaultLocation, DEFAULT_ZOOM.toFloat())
                         )
