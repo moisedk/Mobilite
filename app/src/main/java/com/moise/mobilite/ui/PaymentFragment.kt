@@ -29,6 +29,13 @@ class PaymentFragment : Fragment() {
                 .addToBackStack("backStack")
                 .commit()
         }
+        binding.btnEnterPromoCode.setOnClickListener{
+            parentFragmentManager
+                .beginTransaction()
+                .replace(R.id.flContainer, PromotionFragment())
+                .addToBackStack("backStack")
+                .commit()
+        }
     }
 
     override fun onDestroyView() {
