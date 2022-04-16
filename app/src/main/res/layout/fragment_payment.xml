@@ -8,26 +8,36 @@
     tools:context=".ui.PaymentFragment">
 
     <com.google.android.material.textview.MaterialTextView
-        android:layout_marginTop="@dimen/big_top_margin"
         android:id="@+id/tvPaymentMethods"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/big_top_margin"
         android:text="Saved payment methods"
         android:textSize="24sp" />
 
     <View
         android:id="@+id/divider2"
         android:layout_width="match_parent"
-        android:layout_height="4dp"
+        android:layout_height="1dp"
         android:layout_below="@+id/tvPaymentMethods"
         android:background="?android:attr/listDivider" />
+
+    <ImageView
+        android:id="@+id/cashIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnAddPaymentOption"
+        android:layout_below="@+id/tvPaymentMethods"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_baseline_attach_money_24" />
 
     <RadioGroup
         android:id="@+id/paymentOptions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/divider2"
+        android:layout_toEndOf="@+id/cashIcon"
         android:layout_marginStart="@dimen/margin_small"
         android:layout_marginTop="@dimen/margin_small"
         android:checkedButton="@id/rbCash">
@@ -46,7 +56,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/paymentOptions"
-        android:backgroundTint="@color/white"
         android:text="Add another payment method"
         android:textColor="@color/black"
         app:icon="@drawable/ic_add_card_24" />
@@ -54,7 +63,7 @@
     <View
         android:id="@+id/divider"
         android:layout_width="match_parent"
-        android:layout_height="4dp"
+        android:layout_height="1dp"
         android:layout_below="@id/btnAddPaymentOption"
         android:background="?android:attr/listDivider" />
 
@@ -65,7 +74,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/divider"
         android:layout_marginTop="@dimen/margin_small"
-        android:backgroundTint="@color/white"
         android:text="@string/enter_a_promo_code"
         android:textAlignment="textStart"
         android:textColor="@color/black"

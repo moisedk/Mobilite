@@ -19,10 +19,6 @@
             android:icon="@drawable/ic_e_wallet"
             android:title="Loyalty Points" />
         <item
-            android:id="@+id/nav_promotions"
-            android:icon="@drawable/ic_promotion_24"
-            android:title="Promotions" />
-        <item
             android:id="@+id/nav_support"
             android:icon="@drawable/ic_chat_support_24"
             android:title="Support" />
