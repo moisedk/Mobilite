@@ -8,31 +8,46 @@
         <entry key="app/src/main/res/drawable/btn_h_rounded.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/btn_rounded.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/et_otp.xml" value="0.2085" />
+        <entry key="app/src/main/res/drawable/ic_about_info_24.xml" value="0.242" />
+        <entry key="app/src/main/res/drawable/ic_add_card_24.xml" value="0.242" />
         <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1475" />
         <entry key="app/src/main/res/drawable/ic_baseline_arrow_down_24.xml" value="0.242" />
         <entry key="app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.242" />
+        <entry key="app/src/main/res/drawable/ic_baseline_attach_money_24.xml" value="0.242" />
         <entry key="app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.239" />
         <entry key="app/src/main/res/drawable/ic_baseline_dehaze_24.xml" value="0.1475" />
         <entry key="app/src/main/res/drawable/ic_baseline_delete_outline_24.xml" value="0.239" />
         <entry key="app/src/main/res/drawable/ic_baseline_directions_car_24.xml" value="0.239" />
         <entry key="app/src/main/res/drawable/ic_baseline_electric_car_24.xml" value="0.242" />
+        <entry key="app/src/main/res/drawable/ic_baseline_logout_24.xml" value="0.242" />
+        <entry key="app/src/main/res/drawable/ic_baseline_my_location_24.xml" value="0.242" />
+        <entry key="app/src/main/res/drawable/ic_chat_support_24.xml" value="0.242" />
         <entry key="app/src/main/res/drawable/ic_e_wallet.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/ic_fav_free_journey_24.xml" value="0.2085" />
+        <entry key="app/src/main/res/drawable/ic_history_24.xml" value="0.242" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2085" />
+        <entry key="app/src/main/res/drawable/ic_menu_camera.xml" value="0.242" />
+        <entry key="app/src/main/res/drawable/ic_menu_gallery.xml" value="0.242" />
+        <entry key="app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.242" />
         <entry key="app/src/main/res/drawable/ic_outline_business_center_24.xml" value="0.239" />
         <entry key="app/src/main/res/drawable/ic_outline_edit_24.xml" value="0.239" />
         <entry key="app/src/main/res/drawable/ic_outline_email_24.xml" value="0.239" />
         <entry key="app/src/main/res/drawable/ic_outline_home_24.xml" value="0.239" />
+        <entry key="app/src/main/res/drawable/ic_payment_24.xml" value="0.242" />
         <entry key="app/src/main/res/drawable/ic_promotion_24.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/ic_replay.xml" value="0.2085" />
+        <entry key="app/src/main/res/drawable/ic_work_ride_24.xml" value="0.242" />
+        <entry key="app/src/main/res/drawable/man_user.xml" value="0.242" />
         <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/toolbar_bg.xml" value="0.239" />
         <entry key="app/src/main/res/layout/activity_home_maps.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/activity_maps.xml" value="0.3166496424923391" />
+        <entry key="app/src/main/res/layout/app_bar_bg.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/app_bar_home.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.3229166666666667" />
+        <entry key="app/src/main/res/layout/bg_circle.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/content_home.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/custom_info_contents.xml" value="0.3229166666666667" />
@@ -66,6 +81,45 @@
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.3919089759797724" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2085" />
       </map>
+    </option>
+  </component>
+  <component name="NullableNotNullManager">
+    <option name="myDefaultNullable" value="androidx.annotation.Nullable" />
+    <option name="myDefaultNotNull" value="androidx.annotation.NonNull" />
+    <option name="myNullables">
+      <value>
+        <list size="12">
+          <item index="0" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableDecl" />
+          <item index="1" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
+          <item index="2" class="java.lang.String" itemvalue="androidx.annotation.Nullable" />
+          <item index="3" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.Nullable" />
+          <item index="4" class="java.lang.String" itemvalue="com.android.annotations.Nullable" />
+          <item index="5" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
+          <item index="6" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNullable" />
+          <item index="7" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />
+          <item index="8" class="java.lang.String" itemvalue="javax.annotation.CheckForNull" />
+          <item index="9" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
+          <item index="10" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.Nullable" />
+          <item index="11" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableType" />
+        </list>
+      </value>
+    </option>
+    <option name="myNotNulls">
+      <value>
+        <list size="11">
+          <item index="0" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNonNull" />
+          <item index="1" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.NonNull" />
+          <item index="2" class="java.lang.String" itemvalue="com.android.annotations.NonNull" />
+          <item index="3" class="java.lang.String" itemvalue="androidx.annotation.NonNull" />
+          <item index="4" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullType" />
+          <item index="5" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />
+          <item index="6" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullDecl" />
+          <item index="7" class="java.lang.String" itemvalue="android.support.annotation.NonNull" />
+          <item index="8" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />
+          <item index="9" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />
+          <item index="10" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.NonNull" />
+        </list>
+      </value>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
