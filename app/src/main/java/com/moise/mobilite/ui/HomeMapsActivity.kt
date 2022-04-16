@@ -56,9 +56,6 @@ class HomeMapsActivity : AppCompatActivity() {
                 R.id.nav_loyalty_points -> {
                     fragment = PointsFragment()
                 }
-                R.id.nav_promotions -> {
-                    fragment = PromotionFragment()
-                }
                 R.id.nav_support -> {
                     fragment = SupportFragment()
                 }
