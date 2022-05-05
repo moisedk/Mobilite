@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="main">#FFBB86FC</color>
+    <color name="first">#009688</color>
     <color name="second">#79D27C</color>
-    <color name="third">#B292F9</color>
+    <color name="third">#009688</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="grey">#F0F0F0</color>
+    <color name="finished">#79D27C</color>
+    <color name="cancelled">#F44336</color>
     <color name="white">#FFFFFFFF</color>
 </resources>
