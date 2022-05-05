@@ -3,9 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.PromotionFragment">
+    tools:context=".fragments.PromotionFragment">
 
     <EditText
         android:id="@+id/tvCode"
@@ -38,10 +37,8 @@
         android:id="@+id/btnApply"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/btn_rounded"
         android:text="APPLY"
         android:textColor="@color/white"
-        android:backgroundTint="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         android:fontFamily="serif"

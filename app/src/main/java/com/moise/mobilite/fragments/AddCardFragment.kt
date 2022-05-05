@@ -1,4 +1,4 @@
-package com.moise.mobilite.ui
+package com.moise.mobilite.fragments
 
 import android.os.Bundle
 import android.text.Editable

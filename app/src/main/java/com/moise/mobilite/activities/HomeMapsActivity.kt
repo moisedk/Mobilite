@@ -1,7 +1,6 @@
-package com.moise.mobilite.ui
+package com.moise.mobilite.activities
 
 import android.content.res.Configuration
-import android.graphics.Color
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.view.Gravity
@@ -16,6 +15,7 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
 import com.moise.mobilite.R
 import com.moise.mobilite.databinding.ActivityHomeMapsBinding
+import com.moise.mobilite.fragments.*
 
 class HomeMapsActivity : AppCompatActivity() {
     private lateinit var drawerLayout: DrawerLayout
@@ -47,6 +47,9 @@ class HomeMapsActivity : AppCompatActivity() {
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_baseline_dehaze_24)
         navigationView.setNavigationItemSelectedListener { item ->
             when (item.itemId) {
+                R.id.nav_profile -> {
+                    fragment = ProfileFragment()
+                }
                 R.id.nav_payments -> {
                     fragment = PaymentFragment()
                 }
@@ -65,25 +68,26 @@ class HomeMapsActivity : AppCompatActivity() {
                 }
             }
             if (fragment != null) {
-            supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.flContainer, fragment!!)
-                .addToBackStack(null)
-                .commit()
-            drawerLayout.closeDrawers()
-            item.isChecked = true
-            supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_baseline_arrow_back_24)
-            title = ""
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.flContainer, fragment!!)
+                    .addToBackStack(null)
+                    .commit()
+                drawerLayout.closeDrawers()
+                item.isChecked = true
+                supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_baseline_arrow_back_24)
+                title = ""
             }
             true
         }
         setHeaderOnClickListener(navigationView)
+        setWidgetOnClickListener(navigationView)
     }
 
     private fun setHeaderOnClickListener(navigationView: NavigationView) {
         val headerViewItem = navigationView.inflateHeaderView(R.layout.profile_header)
         val profilePicture = headerViewItem.findViewById<ImageView>(R.id.ivProfilePicture)
-        profilePicture.setOnClickListener{
+        profilePicture.setOnClickListener {
             val profileFragment = ProfileFragment()
             supportFragmentManager
                 .beginTransaction()
@@ -123,6 +127,11 @@ class HomeMapsActivity : AppCompatActivity() {
             }
         } else {
             super.onBackPressed()
+        }
+    }
+    private fun setWidgetOnClickListener(navigationView: NavigationView){
+        navigationView.getHeaderView(0).findViewById<ImageView>(R.id.ivEditProfile1).setOnClickListener{
+            Toast.makeText(this, "Will edit your profile", Toast.LENGTH_SHORT).show()
         }
     }
 

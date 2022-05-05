@@ -1,4 +1,4 @@
-package com.moise.mobilite.ui
+package com.moise.mobilite.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.moise.mobilite.adapters.HistoryAdapter
 import com.moise.mobilite.R
+import com.moise.mobilite.models.Ride
 import com.moise.mobilite.databinding.FragmentHistoryBinding
 import java.util.*
 

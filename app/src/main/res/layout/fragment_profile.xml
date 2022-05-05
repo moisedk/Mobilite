@@ -4,13 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="32dp"
-    android:background="@color/grey"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.ProfileFragment">
+    tools:context=".fragments.ProfileFragment">
 
     <ImageView
         android:layout_marginEnd="10dp"
-        android:id="@+id/imageView"
+        android:id="@+id/ivEditProfile2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_outline_edit_24"
@@ -56,7 +55,6 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="Reggie Okoko"
-                        android:textColor="@color/black"
                         android:textStyle="bold" />
 
                     <TextView
@@ -76,7 +74,6 @@
                 android:drawablePadding="10sp"
                 android:drawableTintMode="src_atop"
                 android:text="reggieokoko@gmail.com"
-                android:textColor="@color/black"
                 android:textSize="17sp" />
 
             <View
@@ -90,7 +87,6 @@
                 android:layout_marginVertical="15dp"
                 android:layout_marginStart="20dp"
                 android:text="Favourite destinations"
-                android:textColor="@color/black"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
@@ -102,7 +98,6 @@
                 android:drawableStart="@drawable/ic_outline_home_24"
                 android:drawablePadding="10sp"
                 android:text="Enter home location"
-                android:textColor="@color/black"
                 android:textSize="17sp" />
 
             <TextView
@@ -113,7 +108,6 @@
                 android:drawableStart="@drawable/ic_outline_business_center_24"
                 android:drawablePadding="10sp"
                 android:text="Enter work location"
-                android:textColor="@color/black"
                 android:textSize="17sp" />
 
             <View
@@ -127,7 +121,6 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="15dp"
                 android:text="Language"
-                android:textColor="@color/black"
                 android:textSize="17sp" />
 
             <TextView
@@ -145,7 +138,6 @@
                 android:layout_marginVertical="15dp"
                 android:layout_marginStart="20dp"
                 android:text="Communication preferences"
-                android:textColor="@color/black"
                 android:textSize="17sp" />
 
             <View
@@ -154,6 +146,7 @@
                 android:background="#dddddd" />
 
             <TextView
+                android:id="@+id/tvLogout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="15dp"
@@ -166,6 +159,7 @@
                 android:textSize="17sp" />
 
             <TextView
+                android:id="@+id/tvDeleteAccount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="15dp"

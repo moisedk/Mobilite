@@ -1,11 +1,16 @@
-package com.moise.mobilite.ui
+package com.moise.mobilite.fragments
 
 import android.Manifest
 import android.annotation.SuppressLint
+import android.app.AlertDialog
+import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Color
 import android.location.Location
+import android.location.LocationManager
 import android.os.Bundle
+import android.provider.Settings
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -36,6 +41,8 @@ import com.moise.mobilite.R
 
 class HomeFragment : Fragment(), OnMapReadyCallback {
     private var map: GoogleMap? = null
+    private var gpsEnabled = false
+    private var networkEnabled = false
     private lateinit var flContainer: FrameLayout
     private lateinit var fabCurrentLocation: FloatingActionButton
 
@@ -51,6 +58,12 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
+        val locationManager =
+            requireActivity().getSystemService(Context.LOCATION_SERVICE) as LocationManager?
+        try {
+            gpsEnabled = locationManager!!.isProviderEnabled(LocationManager.GPS_PROVIDER)
+        } catch (ex: Exception) {
+        }
     }
 
     override fun onCreateView(
@@ -93,6 +106,9 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
         Log.d(TAG, "onMapReady: called")
         map = googleMap
         map?.isBuildingsEnabled = true
+        if (!gpsEnabled)
+            Toast.makeText(requireContext(), "Enable your geo localization", Toast.LENGTH_SHORT)
+                .show()
         getLocationPermission()
 
         updateLocationUI()
@@ -102,6 +118,9 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
         fabCurrentLocation.setOnClickListener {
             Log.d(TAG, "onMapReady: called")
             fabCurrentLocation.rippleColor = Color.GREEN
+            if (!gpsEnabled)
+                Toast.makeText(requireContext(), "Enable your geo localization", Toast.LENGTH_SHORT)
+                    .show()
             getDeviceLocation()
         }
         onAutoCompleteListener()
@@ -127,6 +146,7 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
                     )
                 }
             }
+
             override fun onError(status: Status) {
                 Log.i(TAG, "An error occurred: $status")
             }
@@ -150,6 +170,7 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
             )
         }
     }
+
     @Deprecated("Deprecated in Java")
     override fun onRequestPermissionsResult(
         requestCode: Int,
@@ -233,6 +254,34 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
         }
     }
 
+    private fun checkGPSStatus() {
+        var locationManager: LocationManager? = null
+        if (locationManager == null) {
+            locationManager =
+                requireActivity().getSystemService(Context.LOCATION_SERVICE) as LocationManager?
+        }
+        try {
+            gpsEnabled = locationManager!!.isProviderEnabled(LocationManager.GPS_PROVIDER)
+        } catch (ex: Exception) {
+        }
+        try {
+            networkEnabled = locationManager!!.isProviderEnabled(LocationManager.NETWORK_PROVIDER)
+        } catch (ex: Exception) {
+        }
+        if (!gpsEnabled && !networkEnabled) {
+            val dialog: AlertDialog.Builder = AlertDialog.Builder(requireContext())
+            dialog.setMessage("GPS not enabled")
+            dialog.setPositiveButton(
+                "Ok"
+            ) { _, _ -> //this will navigate user to the device location settings screen
+                val intent = Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS)
+                startActivity(intent)
+            }
+            val alert: AlertDialog = dialog.create()
+            alert.show()
+        }
+    }
+
     companion object {
         private val TAG = HomeFragment::class.java.simpleName
         private const val DEFAULT_ZOOM = 15
@@ -242,6 +291,7 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
         // [START maps_current_place_state_keys]
         private const val KEY_CAMERA_POSITION = "camera_position"
         private const val KEY_LOCATION = "location"
+
         // [END maps_current_place_state_keys]
         // Used for selecting the current place.
         private const val M_MAX_ENTRIES = 5

@@ -3,9 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/grey"
     android:layout_height="match_parent"
-    tools:context=".ui.LoginFragment">
+    tools:context=".fragments.LoginFragment">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etEmailLayout"
@@ -57,7 +56,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
-        android:backgroundTint="@color/black"
         android:text="LOGIN"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline5"

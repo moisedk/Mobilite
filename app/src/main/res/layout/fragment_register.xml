@@ -1,163 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey"
-    tools:context=".ui.RegisterFragment">
+    tools:context=".fragments.RegisterFragment">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/etEmailLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="@+id/edtUsernameLayout"
-        app:layout_constraintStart_toStartOf="@+id/edtUsernameLayout"
-        app:layout_constraintTop_toBottomOf="@+id/edtUsernameLayout">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etEmail"
-            android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etEmailLayout"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Email" />
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="@+id/edtUsernameLayout"
+            app:layout_constraintStart_toStartOf="@+id/edtUsernameLayout"
+            app:layout_constraintTop_toBottomOf="@+id/edtUsernameLayout">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/etPhoneLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="@+id/etEmailLayout"
-        app:layout_constraintStart_toStartOf="@+id/etEmailLayout"
-        app:layout_constraintTop_toBottomOf="@+id/etEmailLayout">
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etPhone"
-            android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etPhoneLayout"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Enter your phone number"
-            android:inputType="phone" />
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="@+id/etEmailLayout"
+            app:layout_constraintStart_toStartOf="@+id/etEmailLayout"
+            app:layout_constraintTop_toBottomOf="@+id/etEmailLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your phone number"
+                android:inputType="phone" />
 
 
-    </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/etPasswordLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="@+id/etPhoneLayout"
-        app:layout_constraintStart_toStartOf="@+id/etPhoneLayout"
-        app:layout_constraintTop_toBottomOf="@+id/etPhoneLayout">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etPassword"
-            android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etPasswordLayout"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Enter your password" />
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="@+id/etPhoneLayout"
+            app:layout_constraintStart_toStartOf="@+id/etPhoneLayout"
+            app:layout_constraintTop_toBottomOf="@+id/etPhoneLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your password" />
 
 
-    </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/edtUsernameLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etUsername"
-            android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtUsernameLayout"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Enter a username"
-            android:inputType="textPersonName" />
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guidelineV"
+            app:layout_constraintTop_toTopOf="@+id/guidelineH">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter a username"
+                android:inputType="textPersonName" />
 
-    <Button
-        android:id="@+id/btnNext"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="@color/black"
-        android:text="NEXT"
-        app:layout_constraintEnd_toEndOf="@+id/etPasswordLayout"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/etPasswordLayout"
-        app:layout_constraintTop_toBottomOf="@+id/etPasswordLayout" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/btnWithGoogle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/black"
-        android:text="CONTINUE WITH GOOGLE"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="@+id/btnNext"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/btnNext"
-        app:layout_constraintTop_toBottomOf="@+id/tvOrGoogle" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="NEXT"
+            app:layout_constraintEnd_toEndOf="@+id/etPasswordLayout"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/etPasswordLayout"
+            app:layout_constraintTop_toBottomOf="@+id/etPasswordLayout" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.08" />
+        <Button
+            android:id="@+id/btnWithGoogle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="CONTINUE WITH GOOGLE"
+            app:layout_constraintEnd_toEndOf="@+id/btnNext"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/btnNext"
+            app:layout_constraintTop_toBottomOf="@+id/tvOrGoogle" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineH"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.15" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.08" />
 
-    <View
-        android:id="@+id/divider1"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toBottomOf="@+id/tvOrGoogle"
-        app:layout_constraintEnd_toStartOf="@+id/tvOrGoogle"
-        app:layout_constraintStart_toStartOf="@+id/btnNext"
-        app:layout_constraintTop_toTopOf="@+id/tvOrGoogle" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.15" />
 
-    <View
-        android:id="@+id/divider4"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toBottomOf="@+id/tvOrGoogle"
-        app:layout_constraintEnd_toEndOf="@+id/btnNext"
-        app:layout_constraintStart_toEndOf="@+id/tvOrGoogle"
-        app:layout_constraintTop_toTopOf="@+id/tvOrGoogle" />
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="@+id/tvOrGoogle"
+            app:layout_constraintEnd_toStartOf="@+id/tvOrGoogle"
+            app:layout_constraintStart_toStartOf="@+id/btnNext"
+            app:layout_constraintTop_toTopOf="@+id/tvOrGoogle" />
 
-    <TextView
-        android:id="@+id/tvOrGoogle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="OR"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnNext" />
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="@+id/tvOrGoogle"
+            app:layout_constraintEnd_toEndOf="@+id/btnNext"
+            app:layout_constraintStart_toEndOf="@+id/tvOrGoogle"
+            app:layout_constraintTop_toTopOf="@+id/tvOrGoogle" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="By signing up, you agree to Photo's Terms of Service and Privacy Policy"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnWithGoogle"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btnWithGoogle"
-        app:layout_constraintTop_toBottomOf="@+id/btnWithGoogle" />
+        <TextView
+            android:id="@+id/tvOrGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="OR"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnNext" />
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="By signing up, you agree to Photo's Terms of Service and Privacy Policy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnWithGoogle"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btnWithGoogle"
+            app:layout_constraintTop_toBottomOf="@+id/btnWithGoogle" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_marginTop="24dp"
     android:layout_marginBottom="24dp"
-    tools:context=".ui.SupportFragment">
+    tools:context=".fragments.SupportFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,7 +21,6 @@
             android:layout_marginVertical="25dp"
             android:layout_weight="1"
             android:text="How can we help?"
-            android:textColor="@color/black"
             android:textStyle="bold" />
 
         <TextView
@@ -29,7 +28,6 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Get help with a recent ride"
-            android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -63,7 +61,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Jomo Kenyatta \nInternational Airport,\nNairobi"
-                    android:textColor="@color/black"
                     android:textSize="18sp" />
 
                 <TextView
@@ -79,7 +76,6 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="Ksh680"
-                android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -120,7 +116,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Capital Centre \nMombasa Road, Nairobi"
-                    android:textColor="@color/black"
                     android:textSize="18sp" />
 
                 <TextView
@@ -136,17 +131,16 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="Ksh720"
-                android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <TextView
+        <Button
+            android:id="@+id/btSelectOlderRide"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="10dp"
             android:text="Select an older ride"
-            android:textColor="#318656"
             android:textSize="18sp" />
 
         <TextView
@@ -155,7 +149,6 @@
             android:layout_marginVertical="10dp"
             android:layout_weight="1"
             android:text="Get help with something else"
-            android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
 

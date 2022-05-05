@@ -3,9 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/grey"
     android:layout_height="match_parent"
-    tools:context=".ui.OtpFragment">
+    tools:context=".fragments.OtpFragment">
 
 
     <TextView
@@ -47,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:textColor="#000000"
-        app:otp_box_background="@color/white"
+        app:otp_box_background="@color/second"
         app:layout_constraintEnd_toStartOf="@+id/guideline10"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="@+id/guideline8"
@@ -86,7 +85,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:backgroundTint="@color/black"
         android:text="VERIFY AND CREATE ACCOUNT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline10"

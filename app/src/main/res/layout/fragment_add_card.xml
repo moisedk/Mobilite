@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey"
-    tools:context=".ui.AddCardFragment">
+    tools:context=".fragments.AddCardFragment">
 
     <TextView
         android:id="@+id/tvCardFullName"
@@ -123,7 +122,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="?attr/colorControlNormal"
         android:text="Continue"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="@+id/etPIN"
