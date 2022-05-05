@@ -1,36 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
-    tools:context=".ui.ProfileFragment">
+    android:layout_height="200dp">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/ivProfilePicture"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:scaleType="centerCrop"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/man_user"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
-        android:src="@drawable/man_user" />
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tvUserName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
         android:layout_marginTop="@dimen/margin_small"
+        android:text="Ali Michael"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/ivProfilePicture"
         app:layout_constraintStart_toStartOf="@+id/ivProfilePicture"
-        app:layout_constraintTop_toBottomOf="@+id/ivProfilePicture"
-        android:text="Ali Michael" />
+        app:layout_constraintTop_toBottomOf="@+id/ivProfilePicture" />
 
+    <ImageView
+        android:id="@+id/ivEditProfile1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_outline_edit_24"
+        app:layout_constraintEnd_toEndOf="@+id/tvUserName"
+        app:layout_constraintStart_toStartOf="@+id/tvUserName"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

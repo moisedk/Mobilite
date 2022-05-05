@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Mobilite</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="log_in">Log in</string>
     <string name="hint_email">Email or Username</string>
@@ -36,4 +35,9 @@
     <string name="pick_place">Pick A Place</string>
     <string name="default_info_title">Title</string>
     <string name="default_info_snippet">Info</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+    <!-- Paste BOTH strings as required -->
+    <string name="back4app_app_id">8Vi67NE1jYXFwnM4abbsecIXZoeJQSclpN63YbjE</string>
+    <string name="back4app_client_key">3yuVi25ACVQx7p1PTaUF1WaEJPwl5jHYkFaBr0Jc</string>
 </resources>
