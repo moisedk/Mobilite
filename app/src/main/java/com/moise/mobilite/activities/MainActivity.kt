@@ -1,4 +1,4 @@
-package com.moise.mobilite.ui
+package com.moise.mobilite.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

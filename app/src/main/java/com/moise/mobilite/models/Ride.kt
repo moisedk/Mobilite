@@ -1,4 +1,4 @@
-package com.moise.mobilite.ui
+package com.moise.mobilite.models
 
 import java.util.*
 
