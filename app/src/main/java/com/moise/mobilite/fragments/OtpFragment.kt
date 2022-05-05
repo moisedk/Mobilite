@@ -1,4 +1,4 @@
-package com.moise.mobilite.ui
+package com.moise.mobilite.fragments
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.moise.mobilite.activities.HomeMapsActivity
 import com.moise.mobilite.databinding.FragmentOtpBinding
 
 class OtpFragment: Fragment() {

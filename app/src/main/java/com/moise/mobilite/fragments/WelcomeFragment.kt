@@ -1,6 +1,5 @@
-package com.moise.mobilite.ui
+package com.moise.mobilite.fragments
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View

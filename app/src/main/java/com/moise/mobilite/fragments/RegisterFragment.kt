@@ -1,6 +1,5 @@
-package com.moise.mobilite.ui
+package com.moise.mobilite.fragments
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.moise.mobilite.databinding.FragmentRegisterBinding
 
 class RegisterFragment : Fragment() {
-    private var _binding: FragmentRegisterBinding?  = null
+    private var _binding: FragmentRegisterBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -24,12 +23,16 @@ class RegisterFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        binding.btnNext.setOnClickListener{
+        binding.btnNext.setOnClickListener {
             val action = RegisterFragmentDirections.actionRegisterFragmentToOtpFragment()
             findNavController().navigate(action)
         }
-        binding.btnWithGoogle.setOnClickListener{
-            Toast.makeText(context, "Logging in with Google Authentication API!!!", Toast.LENGTH_SHORT).show()
+        binding.btnWithGoogle.setOnClickListener {
+            Toast.makeText(
+                context,
+                "Logging in with Google Authentication API!!!",
+                Toast.LENGTH_SHORT
+            ).show()
         }
     }
 }
