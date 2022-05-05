@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isVisible
 import com.moise.mobilite.R
 import com.moise.mobilite.databinding.FragmentSupportBinding
 
