@@ -12,9 +12,9 @@ import com.moise.mobilite.models.Ride
 class HistoryAdapter(val context: Context, private val rideHistoryList: List<Ride>): RecyclerView.Adapter<HistoryAdapter.ViewHolder>() {
     class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
         fun bind(ride: Ride) {
-            rideDescription.text = ride.description
-            rideDate.text = ride.date.toString()
-            if (ride.completed) {
+            rideDescription.text = ride.getDescription()
+            rideDate.text = ride.getDate().toString()
+            if (ride.getCompleted()) {
                 rideStatus.text = itemView.resources.getString(R.string.ride_finished)
                 rideStatus.setTextColor(itemView.resources.getColor(R.color.finished))
             }

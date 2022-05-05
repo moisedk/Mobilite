@@ -7,19 +7,15 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.moise.mobilite.adapters.HistoryAdapter
 import com.moise.mobilite.R
-import com.moise.mobilite.models.Ride
+import com.moise.mobilite.adapters.HistoryAdapter
 import com.moise.mobilite.databinding.FragmentHistoryBinding
-import java.util.*
+import com.moise.mobilite.models.DataSource
+import com.moise.mobilite.models.Ride
 
 class HistoryFragment : Fragment() {
-    private val rideHistory = mutableListOf(
-        Ride("Mother and Child Hospital", Calendar.getInstance().time, true),
-        Ride("Port Louis Casela Nature Park", Calendar.getInstance().time, true),
-        Ride("The City Orient Restaurant", Calendar.getInstance().time, false),
-        Ride("Train Ride Waterfront", Calendar.getInstance().time, true),
-    )
+    private val rideHistory = DataSource.getSampleRides()
+
     private var _binding: FragmentHistoryBinding? = null
     private val binding get() = _binding!!
     override fun onCreateView(
