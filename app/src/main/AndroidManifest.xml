@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.moise.mobilite">
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -28,14 +30,13 @@
             android:value="${MAPS_API_KEY}" />
         <meta-data
             android:name="com.parse.SERVER_URL"
-            android:value="@string/back4app_server_url"/>
+            android:value="${BACK4APP_SERVER_URL}" />
         <meta-data
             android:name="com.parse.APPLICATION_ID"
-            android:value="@string/back4app_app_id" />
+            android:value="${BACK4APP_APP_ID}" />
         <meta-data
             android:name="com.parse.CLIENT_KEY"
-            android:value="@string/back4app_client_key" />
-
+            android:value="${BACK4APP_CLIENT_KEY}" />
 
         <activity
             android:name=".activities.HomeMapsActivity"
