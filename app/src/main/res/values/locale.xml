@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="phone_prefix">
+        <item>Mur(230)</item>
+        <item>South Africa (+27)</item>
+    </array>
+
+    <array name="languages">
+        <item>English - GB</item>
+        <item>French - FR</item>
+        <item>English - US</item>
+        <item>Swahili</item>
+        <item>Creole</item>
+    </array>
+</resources>

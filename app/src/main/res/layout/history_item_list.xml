@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_tiny"
                 android:textSize="16sp"
-                tools:textColor="@color/teal_200"
+                tools:textColor="@color/primary600"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvRideDateTime"
                 tools:text="Finished" />
