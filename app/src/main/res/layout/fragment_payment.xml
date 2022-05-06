@@ -13,7 +13,7 @@
         android:layout_marginStart="@dimen/margin_small"
         android:layout_marginTop="@dimen/big_top_margin"
         android:text="Saved payment methods"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 
     <View
         android:id="@+id/divider2"
@@ -38,6 +38,12 @@
             android:textSize="16sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rbCard"
+            android:text="Credit or debit card"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </RadioGroup>
 
     <View
@@ -48,10 +54,10 @@
         android:background="?android:attr/listDivider" />
 
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnAddPaymentOption"
         style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/paymentOptions"
         android:text="Add another payment method"
@@ -64,15 +70,14 @@
         android:layout_below="@id/btnAddPaymentOption"
         android:background="?android:attr/listDivider" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnEnterPromoCode"
         style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/divider"
         android:layout_marginTop="@dimen/margin_small"
         android:text="@string/enter_a_promo_code"
-        android:textAlignment="textStart"
         app:icon="@drawable/ic_promotion_24" />
 
 </RelativeLayout>

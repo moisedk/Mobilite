@@ -97,10 +97,10 @@
             android:id="@+id/btnWithGoogle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="8dp"
             android:text="CONTINUE WITH GOOGLE"
             app:layout_constraintEnd_toEndOf="@+id/btnNext"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/btnNext"
             app:layout_constraintTop_toBottomOf="@+id/tvOrGoogle" />
 
@@ -150,7 +150,7 @@
             app:layout_constraintTop_toBottomOf="@+id/btnNext" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/tvTerms"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="By signing up, you agree to Photo's Terms of Service and Privacy Policy"

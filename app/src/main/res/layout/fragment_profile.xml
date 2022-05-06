@@ -78,7 +78,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="5dp"
+                android:layout_height="1dp"
                 android:background="#dddddd" />
 
             <TextView
@@ -112,7 +112,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="5dp"
+                android:layout_height="1dp"
                 android:background="#dddddd" />
 
             <TextView
@@ -123,12 +123,12 @@
                 android:text="Language"
                 android:textSize="17sp" />
 
-            <TextView
+            <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginBottom="15dp"
-                android:text="English - GB"
+                android:entries="@array/languages"
                 android:textColor="#444"
                 android:textSize="15sp" />
 
@@ -142,7 +142,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="5dp"
+                android:layout_height="1dp"
                 android:background="#dddddd" />
 
             <TextView
@@ -153,9 +153,9 @@
                 android:layout_marginStart="20dp"
                 android:drawableStart="@drawable/ic_baseline_logout_24"
                 android:drawablePadding="10sp"
-                android:drawableTint="#d82121"
+                android:drawableTint="@color/primary900"
                 android:text="Log out"
-                android:textColor="#d82121"
+                android:textColor="@color/primary900"
                 android:textSize="17sp" />
 
             <TextView
@@ -166,9 +166,9 @@
                 android:layout_marginStart="20dp"
                 android:drawableStart="@drawable/ic_baseline_delete_outline_24"
                 android:drawablePadding="10sp"
-                android:drawableTint="#d82121"
+                android:drawableTint="@color/primary900"
                 android:text="Delete account"
-                android:textColor="#d82121"
+                android:textColor="@color/primary900"
                 android:textSize="17sp" />
         </LinearLayout>
     </ScrollView>

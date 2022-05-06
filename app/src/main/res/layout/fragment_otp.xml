@@ -7,27 +7,18 @@
     tools:context=".fragments.OtpFragment">
 
 
-    <TextView
-        android:id="@+id/tvTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Let's verify you ID"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline10"
-        app:layout_constraintStart_toStartOf="@+id/guideline8"
-        app:layout_constraintTop_toTopOf="@+id/guideline9" />
+
 
     <TextView
         android:id="@+id/tvDesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="A code was sent to +230 7085***"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline10"
         app:layout_constraintStart_toStartOf="@+id/guideline8"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -42,13 +33,13 @@
 
     <in.aabhasjindal.otptextview.OtpTextView
         android:id="@+id/otp_view"
+        app:bar_active_color="#FC6A03"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:textColor="#000000"
-        app:otp_box_background="@color/second"
+        app:bar_enabled="true"
+        android:outlineProvider="background"
         app:layout_constraintEnd_toStartOf="@+id/guideline10"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="@+id/guideline8"
         app:layout_constraintTop_toBottomOf="@+id/tvExpireTxt"
         app:length="4"
@@ -58,7 +49,6 @@
 
     <TextView
         android:id="@+id/textView"
-        style="@style/TextAppearance.AppCompat"
         android:layout_width="156dp"
         android:layout_height="25dp"
         android:layout_marginBottom="32dp"
@@ -66,16 +56,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline8" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnResendOPT"
+    <TextView
+        android:id="@+id/tvResendOPT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
         android:text="Resend"
         android:textAlignment="center"
-        android:textColor="@color/black"
-        app:icon="@drawable/ic_replay"
-        app:iconTint="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toStartOf="@+id/guideline10"
         app:layout_constraintTop_toTopOf="@+id/textView" />
