@@ -16,11 +16,11 @@ class HistoryAdapter(val context: Context, private val rideHistoryList: List<Rid
             rideDate.text = ride.getDate().toString()
             if (ride.getCompleted()) {
                 rideStatus.text = itemView.resources.getString(R.string.ride_finished)
-                rideStatus.setTextColor(itemView.resources.getColor(R.color.finished))
+                rideStatus.setTextColor(itemView.resources.getColor(R.color.secondary900))
             }
             else {
                 rideStatus.text = itemView.resources.getString(R.string.cancelled)
-                rideStatus.setTextColor(itemView.resources.getColor(R.color.cancelled))
+                rideStatus.setTextColor(itemView.resources.getColor(R.color.primary900))
             }
         }
 

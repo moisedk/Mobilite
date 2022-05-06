@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="first">#009688</color>
-    <color name="second">#79D27C</color>
-    <color name="third">#009688</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="grey">#F0F0F0</color>
-    <color name="finished">#79D27C</color>
-    <color name="cancelled">#F44336</color>
+    <color name="primary900">#FC6A03</color>
+    <color name="primary800">#FC8B02</color>
+    <color name="primary700">#FD9C00</color>
+    <color name="primary600">#FDAF00</color>
+    <color name="primary500">#FDBD04</color>
+    <color name="secondary900">#0944A9</color>
+    <color name="secondary800">#0B63C8</color>
+    <color name="secondary500">#0394FC</color>
+    <color name="secondary400">#37A4FD</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
 </resources>

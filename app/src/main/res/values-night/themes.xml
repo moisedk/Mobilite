@@ -2,12 +2,12 @@
     <!-- Base application theme. -->
     <style name="Theme.Mobilite" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/first</item>
-        <item name="colorPrimaryVariant">@color/third</item>
+        <item name="colorPrimary">@color/primary900</item>
+        <item name="colorPrimaryVariant">@color/primary700</item>
         <item name="colorOnPrimary">#98B453</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorSecondary">@color/primary600</item>
+        <item name="colorSecondaryVariant">@color/primary600</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
