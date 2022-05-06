@@ -1,7 +1,13 @@
 package com.moise.mobilite.fragments
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
+import android.text.SpannableString
+import android.text.Spanned
+import android.text.TextPaint
+import android.text.method.LinkMovementMethod
+import android.text.style.ClickableSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -24,12 +30,26 @@ class OtpFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.btnResendOPT.setOnClickListener{
-            Toast.makeText(context, "Code has been resent", Toast.LENGTH_SHORT).show()
-        }
+
         binding.btnAccountCreation.setOnClickListener{
             startActivity(Intent(context, HomeMapsActivity::class.java))
             requireActivity().finish()
         }
+        val resend = "Resend"
+        val spannableString = SpannableString(resend)
+        val clickableSpan = object : ClickableSpan (){
+            override fun onClick(widget: View) {
+                Toast.makeText(requireContext(), "Will be resent!", Toast.LENGTH_SHORT).show()
+            }
+
+            override fun updateDrawState(ds: TextPaint) {
+                super.updateDrawState(ds)
+                ds.isUnderlineText = false
+            }
+        }
+        spannableString.setSpan(clickableSpan, 0, resend.length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+        binding.tvResendOPT.text = spannableString
+        binding.tvResendOPT.movementMethod = LinkMovementMethod.getInstance()
+        binding.tvResendOPT.highlightColor = Color.TRANSPARENT
     }
 }
